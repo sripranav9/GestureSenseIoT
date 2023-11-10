@@ -1,3 +1,21 @@
+/*
+  Arduino - Switch Configuration for Gesture Sense IoT
+  © Sri Pranav Srivatsavai
+
+  This sketch focuses on acheiving the single press, double press, and 
+  hold for 3 second input from the switch.
+
+  The circuit:
+  Arduino Nano 33 IoT
+
+  ChatGPT was used for debugging the code, and finding solutions to achieve the 'hold for 3 second'
+  result even after the press wasn't released after 3 seconds.
+
+  Special References:
+  - Guides at NYU ITP for code and overall physical computing.
+  - Professor Johnston for his help and feedback.
+*/
+
 const int buttonPin = 2; //input for the button
 int buttonState; //high or low, read in the loop()
 int lastButtonState = LOW; //initialize
