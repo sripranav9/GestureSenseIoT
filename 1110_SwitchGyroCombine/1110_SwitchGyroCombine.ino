@@ -1,3 +1,24 @@
+/*
+  Arduino - Switch Configuration for Gesture Sense IoT
+  © Sri Pranav Srivatsavai
+
+  This sketch focuses on two main componenets:
+  - Acheiving the single press, double press, and hold for 3 second input from the switch
+  - Reads the gyroscope values from the LSM6DS3 sensor and prints them to the Serial Monitor or Serial Plotter, 
+    as a directional detection of an axis' angular velocity.
+
+  Circuit:
+  Arduino Nano 33 IoT
+
+  ChatGPT was used for:
+  - debugging the code
+  - finding solutions to achieve the 'hold for 3 second' result even after the press wasn't released after 3 seconds.
+
+  Special References:
+  - Guides at NYU ITP for code and overall physical computing.
+  - Professor Johnston for his help and feedback.
+*/
+
 #include <Arduino_LSM6DS3.h> // Include the LSM6DS3 library
 
 //global variables for gyroscope
@@ -95,5 +116,4 @@ void loop() {
   }
   
   lastButtonState = buttonState; // Save the current state of the button for the next loop
-
 }
