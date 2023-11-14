@@ -15,7 +15,7 @@
   - finding solutions to achieve the 'hold for 3 second' result even after the press wasn't released after 3 seconds.
 
   Special References:
-  - Guides at NYU ITP for code and overall physical computing.
+  - Guides at NYU ITP for physical computing.
   - Professor Johnston for his help and feedback.
 */
 
