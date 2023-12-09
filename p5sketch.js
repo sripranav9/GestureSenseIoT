@@ -1,3 +1,14 @@
+//=========================================================
+//   -- Final Project, Introduction to Wearables --
+//             Professor Daniel Johnston
+
+// By             : Sri Pranav Srivatsavai
+// Date Created   : Dec-03-2023
+// Date Submitted : Dec-12-2023
+// Description    : GestureSenseIoT Output - This is a sample script to show the potential use cases of the Gesture Sense glove.
+// © Sri Pranav Srivatsavai
+//=========================================================
+
 let serial;
 let latestData = "waiting for data";
 let rectangleX, rectangleY, rectSize;
@@ -10,7 +21,7 @@ function setup() {
   serial = new p5.SerialPort();
 
   serial.list();
-  serial.open('/dev/tty.usbmodem11401'); // replace with your serial port
+  serial.open('/dev/tty.usbmodem11301'); // replace with your serial port
 
   serial.on('connected', serverConnected);
   serial.on('list', gotList);
@@ -51,6 +62,7 @@ function gotData() {
   let currentString = serial.readLine().trim(); // read the incoming string
   if (!currentString) return; // if the string is empty, do nothing
   latestData = currentString; // save it for the draw method
+  print(latestData);
 
   //Collision data
     // Handle collision events
