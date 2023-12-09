@@ -1,5 +1,5 @@
 /*
-  Arduino - Switch Configuration for Gesture Sense IoT
+  Arduino - Code for Gesture Sense IoT
   © Sri Pranav Srivatsavai
 
   This sketch focuses on two main componenets:
