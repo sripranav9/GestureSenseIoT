@@ -27,7 +27,7 @@ int plusThreshold = 100, minusThreshold = -100;
 int delayRollPitch = 500; //delay set to 0.5 seconds
 
 //global variables for switch debouncing
-const int buttonPin = 2; //input for the button
+const int buttonPin = 3; //input for the button
 int buttonState; //high or low, read in the loop()
 int lastButtonState = LOW; //initialize
 unsigned long buttonPressedTime = 0; //to compare with millis() later
@@ -44,7 +44,7 @@ void setup() {
   if (!IMU.begin()) {
     Serial.println("Failed to initialize IMU!");
     while (1);
-  }
+  } 
 
   //initialize pin as input for the button
   pinMode(buttonPin, INPUT);
